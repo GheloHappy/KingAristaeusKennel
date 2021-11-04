@@ -1,0 +1,40 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    /* background-color: red; */
+}
+
+.logo{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.buttons-layer{
+    width: 100%;
+    position: relative;
+    /* background-color: black; */
+}
+
+@font-face {
+    font-family: Pacifico;
+    src: url('/fonts/Pacifico.ttf');
+}
+
+button{
+    display: inline-block;
+    margin-left: 20%;
+    height: 20%;
+    width: 20%;
+    background-color: white;
+    font-size: 100%;
+    border-radius: 50%;
+    font-family: Pacifico;
+}
