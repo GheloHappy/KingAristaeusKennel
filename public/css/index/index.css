@@ -1,0 +1,58 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(155, 143, 143);
+}
+
+
+/* Nav Bar */
+.nav-bar{
+    /* height: 100%;
+    width: 5vw; */
+    height: 15vh;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* opacity: 0.8; */
+    transition: 0.5s;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+
+.logo {
+    float: left;
+    margin: 0vh 3vw;
+}
+
+.logo img {
+    height: 15vh;
+    width: 8vw;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+.nav-buttons {
+    /* background-color: rgb(189, 9, 9); */
+    float: right;
+    width: 80%;
+    height: 100%;
+    display: inline;
+}
+.nav-buttons a {
+    float: left;
+    font-size: 4vh;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 6vh 0 0 5vw;
+    text-decoration: none;
+}
+
+.nav-buttons a:hover {
+    color: green;
+}
