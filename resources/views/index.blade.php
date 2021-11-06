@@ -5,18 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>King Aristaeus</title>
     <link rel="stylesheet" href="/css/index/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
     <div class='nav-bar' id='navBar'>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
         <div class='logo'>
-            <a href="/"><img src="/img/husky_logo_noBG.png" alt="husky_logo"> </a>
+            <img src="/img/KAK_noBG.png" alt="husky_logo">
         </div>
         <div class='nav-buttons'>
-            <a href="/">Home</a>
-            <a href="/">Kennel Family Tree</a>
-            <a href="/">Location</a>
-            <a href="/">Contact us</a>
-            <a href="/">PCCI Certificate</a>
+            <a class="active" href="/">HOME</a>
+            <a href="/">BREEDS</a>
+            <a href="/">LOCATION</a>
+            <a href="/">CONTACT</a>
+            <a href="/">ABOUT</a>
         </div>
     </div>
     {{-- <script src="{{ url('js/index.js') }}"></script> --}}

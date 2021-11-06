@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class = 'logo'>
-        <img src="{{url('/img/Logo_w_crown.png')}}" alt="Image"/>
+        <img src="{{url('/img/Logo.png')}}" alt="Image"/>
         
         <div class='buttons-layer'>
             <button type="submit">Login</button>

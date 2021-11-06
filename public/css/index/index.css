@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: rgb(155, 143, 143);
+    background-color: black;
 }
 
 
@@ -9,16 +9,11 @@ body{
 .nav-bar{
     /* height: 100%;
     width: 5vw; */
-    height: 15vh;
+    height: 12vh;
     width: 100%;
     background: rgb(255, 255, 255);
     float: left;
     position: fixed;
-    top: 0;
-    left: 0;
-    /* opacity: 0.8; */
-    transition: 0.5s;
-    display: block;
     padding: 0;
     margin: 0;
 }
@@ -26,33 +21,94 @@ body{
 
 .logo {
     float: left;
-    margin: 0vh 3vw;
+    margin-left: 3vw;
+    margin-top: 1vh;
+    padding-right: 15vw;
 }
 
 .logo img {
-    height: 15vh;
-    width: 8vw;
+    height: 10vh;
+    width: 25vw;
     image-rendering: auto;
     image-rendering: crisp-edges;
     image-rendering: pixelated;
 }
-
-.nav-buttons {
-    /* background-color: rgb(189, 9, 9); */
-    float: right;
-    width: 80%;
-    height: 100%;
-    display: inline;
+.nav-buttons{
+    left: -100%;
 }
 .nav-buttons a {
-    float: left;
-    font-size: 4vh;
+    display: inline-block;
+    font-size: 3vh;
     color: rgb(0, 0, 0);
     text-align: center;
-    margin: 6vh 0 0 5vw;
+    margin: 5vh 0 0 4vw;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .nav-buttons a:hover {
-    color: green;
+    color: grey;
+}
+
+a.active {
+    color: grey;
+}
+
+.checkbtn{
+    float: right;
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media screen and (max-width: 1075px) {
+    .checkbtn{
+        display: none;
+    }       
+}
+@media screen and (max-width: 951px) {
+    .checkbtn{
+        display: block;
+        margin: 4vh 4vw 0 0;
+    }
+    .nav-buttons a.active {
+        color: black;
+    }
+    .nav-buttons a{
+        font-size: 4vh;
+        color: white;
+        margin-right: 50%;
+        padding-left: 40vw;
+    }  
+    .nav-buttons a:hover {
+        color: black;
+    }
+    .nav-buttons a.active:hover {
+        color: none;
+    }
+    .nav-buttons{
+        margin-top: 12vh;
+        background-color: rgb(61, 57, 57);
+        position: fixed;
+        left: 0;
+        transition: all .5s;
+    }  
+    .logo {
+        margin-left: 5vw;
+    } 
+    .logo img {
+        width: 40vw;
+    }
+    #check:checked ~ .nav-buttons{
+        left:-100%;
+        opacity: 0;
+    }
+    #check:checked ~ .nav-buttons{
+        left:-100%;
+        opacity: 0;
+    }
 }
