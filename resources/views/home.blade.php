@@ -1,3 +1,4 @@
+@include('nav-bar')
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,12 +9,12 @@
 </head>
 <body>
     <div class = 'logo'>
-        <img src="{{url('/img/Logo.png')}}" alt="Image"/>
+        <img src="{{url('/img/husky_Logo_noBG.png')}}" alt="Image"/>
         
-        <div class='buttons-layer'>
+        {{-- <div class='buttons-layer'>
             <button type="submit">Login</button>
             <button type="submit">Register</button>
-        </div>
+        </div> --}}
     </div>
 </body>
 </html>

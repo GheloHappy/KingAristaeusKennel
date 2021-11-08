@@ -7,4 +7,4 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/index', [IndexController::class, 'index']);
+Route::get('/nav', [IndexController::class, 'nav']);

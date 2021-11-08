@@ -1,45 +1,41 @@
-body{
-    padding: 0;
-    margin: 0;
-    background-color: black;
-}
-
 
 /* Nav Bar */
 .nav-bar{
-    /* height: 100%;
-    width: 5vw; */
     height: 12vh;
     width: 100%;
-    background: rgb(255, 255, 255);
+    background-color: #1a1a1a;
     float: left;
     position: fixed;
     padding: 0;
     margin: 0;
+    z-index: 1;
+}
+@font-face {
+    font-family: Pacifico;
+    src: url('/fonts/Pacifico.ttf');
 }
 
-
-.logo {
+.logo-nav {
     float: left;
     margin-left: 3vw;
-    margin-top: 1vh;
-    padding-right: 15vw;
+    margin-top: 3vh;    
 }
 
-.logo img {
-    height: 10vh;
-    width: 25vw;
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
+.logo-nav a {
+    font-family: Pacifico;
+    font-size: 2vw;
+    text-decoration: none;
+    color: white;
 }
 .nav-buttons{
+    float: right;
     left: -100%;
+    margin-right: 3vw;
 }
 .nav-buttons a {
     display: inline-block;
     font-size: 3vh;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     margin: 5vh 0 0 4vw;
     text-decoration: none;
@@ -74,34 +70,38 @@ a.active {
     .checkbtn{
         display: block;
         margin: 4vh 4vw 0 0;
+        color: white;
     }
     .nav-buttons a.active {
-        color: black;
+        color: grey;
     }
     .nav-buttons a{
         font-size: 4vh;
         color: white;
         margin-right: 50%;
-        padding-left: 40vw;
+        font-size: 4vw;
     }  
     .nav-buttons a:hover {
-        color: black;
+        color: grey;
     }
     .nav-buttons a.active:hover {
         color: none;
     }
     .nav-buttons{
         margin-top: 12vh;
-        background-color: rgb(61, 57, 57);
+        background-color: #1a1a1a;
         position: fixed;
         left: 0;
         transition: all .5s;
+        padding-bottom: 2vh;
+        margin-right: 0;
     }  
-    .logo {
-        margin-left: 5vw;
+    .logo-nav {
+        margin-left: 4vw;
+        margin-top: 2vh;
     } 
-    .logo img {
-        width: 40vw;
+    .logo-nav a {
+        font-size: 5vh;
     }
     #check:checked ~ .nav-buttons{
         left:-100%;
