@@ -15,6 +15,10 @@
     src: url('/fonts/Pacifico.ttf');
 }
 
+.active {
+    background-color: red;
+}
+
 .logo-nav {
     float: left;
     margin-left: 3vw;
@@ -46,10 +50,6 @@
     color: grey;
 }
 
-a.active {
-    color: grey;
-}
-
 .checkbtn{
     float: right;
     font-size: 35px;
@@ -72,9 +72,9 @@ a.active {
         margin: 4vh 4vw 0 0;
         color: white;
     }
-    .nav-buttons a.active {
+    /* .nav-buttons a.active {
         color: grey;
-    }
+    } */
     .nav-buttons a{
         font-size: 4vh;
         color: white;
@@ -84,9 +84,9 @@ a.active {
     .nav-buttons a:hover {
         color: grey;
     }
-    .nav-buttons a.active:hover {
+    /* .nav-buttons a.active:hover {
         color: none;
-    }
+    } */
     .nav-buttons{
         margin-top: 12vh;
         background-color: #1a1a1a;

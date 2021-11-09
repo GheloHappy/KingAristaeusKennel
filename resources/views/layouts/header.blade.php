@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/css/nav/nav.css">
+    <link rel="stylesheet" href="/css/header/nav.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
@@ -14,9 +14,12 @@
             {{-- <img src="/img/KAK_noBG.png" alt="husky_logo"> --}}
         </div>
         <div class='nav-buttons'>
-            <a class="active" href="/">HOME</a>
+            <a href="/"
+                class="{{ request()->is('/') ? 'active' : '' }}">HOME</a>
             <a href="/">BREEDS</a>
-            <a href="/">LOCATION</a>
+            <a href="location"
+                class="{{ request()->is('location') ? 'active' : '' }}">LOCATION
+            </a>
             <a href="/">CONTACT</a>
             <a href="/">DOG FOR SALE</a>
         </div>

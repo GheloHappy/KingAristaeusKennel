@@ -1,10 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\IndexController;
+use App\Http\Controllers\PagesController;
 
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/nav', [IndexController::class, 'nav']);
+Route::get('/header', [PagesController::class, 'header']);
+Route::get('/', [PagesController::class, 'index']);
+Route::get('/location', [PagesController::class, 'location']);
