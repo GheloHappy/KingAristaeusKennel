@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
+@push('scripts')
+<script src="{{ asset('js/navToggle.js')}}"></script>
+@endpush
+
 @section('content')
+
 
 <div class = 'logo'>
     <img src="{{url('/img/husky_Logo_noBG.png')}}" alt="Image"/>

@@ -13,5 +13,6 @@
 
     @yield('content')
     @yield('location')
+    @yield('contact')
 </body>
 </html>

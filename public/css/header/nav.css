@@ -75,15 +75,16 @@
     .nav-buttons a{
         color: white;
         margin-right: 50%;
-        font-size: 4vw;
+        font-size:  4vh;
     }  
     .nav-buttons a:hover {
-        color: grey;
+        background-color: red;
     }
     .nav-buttons{
         margin-top: 12vh;
         background-color: #1a1a1a;
         position: fixed;
+        width: 100%;
         left: 0;
         transition: all .5s;
         padding-bottom: 2vh;
@@ -95,10 +96,6 @@
     } 
     .logo-nav a {
         font-size: 5vh;
-    }
-    #check:checked ~ .nav-buttons{
-        left:-100%;
-        opacity: 0;
     }
     #check:checked ~ .nav-buttons{
         left:-100%;

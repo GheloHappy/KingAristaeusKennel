@@ -9,10 +9,10 @@ class PagesController extends Controller
     public function index(){
         return view('index');
     }
-    public function header(){
-        return view('header');
-    }
     public function location(){
         return view('location');
+    }
+    public function contact(){
+        return view('contact');
     }
 }
